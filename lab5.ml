@@ -274,7 +274,7 @@ Exercise 9: Define a person record type. Use the field names "name",
 
 type person = { name : string;
                 favorite : color;
-                birthday : date } ;;
+                birthdate : date } ;;
 
 (* Let's now do something with these person values. We'll create a
 data structure that allows us to model simple familial relationships.
@@ -314,7 +314,7 @@ as well.
 ......................................................................*)
 
 let new_child (name: string) (c: color) (d: date): family =
-  Single {name; favorite = validated_rgb c; birthday = validated_date d} ;;
+  Single {name; favorite = validated_rgb c; birthdate = validated_date d} ;;
 
 (*......................................................................
 Exercise 11: Write a function that allows a person to marry in to a
