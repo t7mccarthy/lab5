@@ -180,7 +180,7 @@ let convert_to_rgb (c: color) : int * int * int =
   | Simple Green -> (0, 255, 0)
   | Simple Blue -> (0, 0, 255)
   | Simple Indigo -> (75, 0, 130)
-  | Simple Violet -> (240, 130, 240)
+  | Simple Violet -> (240, 130, 240) ;;
 
 (*======================================================================
 Part 2: Dates as a record type
